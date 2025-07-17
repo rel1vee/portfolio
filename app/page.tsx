@@ -640,8 +640,11 @@ export default function LandingPage() {
               link: "https://reportify-kp.vercel.app/",
             },
           ].map((project, index) => (
-            <motion.div
+            <motion.a
               key={index}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
               variants={itemVariants}
               className={`relative bg-white/5 backdrop-blur-xl border border-gray-700/30 rounded-2xl shadow-2xl overflow-hidden group cursor-pointer`}
               whileHover="hover"
@@ -674,16 +677,11 @@ export default function LandingPage() {
                 transition={{ duration: 0.3 }}
                 className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6 rounded-2xl"
               >
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-5 py-2 md:px-6 md:py-3 bg-blue-600 text-white font-bold text-sm md:text-base rounded-full hover:bg-blue-700 transition-colors duration-300"
-                >
+                <span className="px-5 py-2 md:px-6 md:py-3 bg-blue-600 text-white font-bold text-sm md:text-base rounded-full hover:bg-blue-700 transition-colors duration-300">
                   View Project
-                </a>
+                </span>
               </motion.div>
-            </motion.div>
+            </motion.a>
           ))}
         </motion.div>
       </section>
