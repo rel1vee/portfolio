@@ -550,8 +550,7 @@ export default function LandingPage() {
           {/* Penghargaan & Sertifikasi */}
           <motion.div variants={itemVariants}>
             <h3 className="text-2xl md:text-3xl font-bold text-teal-400 mb-6 flex items-center">
-              <FaAward className="mr-3 text-xl md:text-2xl" /> Awards &
-              Certifications
+              <FaAward className="mr-3 text-xl md:text-2xl" /> Certifications
             </h3>
             <div className="relative border-l-2 border-gray-700 pl-6">
               <div className="absolute w-4 h-4 bg-blue-500 rounded-full -left-2 top-0 transform -translate-y-1/2"></div>
@@ -564,16 +563,19 @@ export default function LandingPage() {
                 </h4>
                 <p className="text-gray-400">Udemy | 2024</p>
               </motion.div>
-              {/* <div className="absolute w-4 h-4 bg-blue-500 rounded-full -left-2 top-[calc(50%-8px)] transform -translate-y-1/2"></div>
-              <motion.div
-                variants={itemVariants}
-                className="mb-8 p-4 bg-white/5 rounded-lg shadow-md border border-gray-700/30"
+              <motion.a
+                href="https://www.linkedin.com/in/muhzakierbaisyas/details/certifications/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-bold text-base rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg"
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0 0 20px rgba(96, 165, 250, 0.8)",
+                }}
+                whileTap={{ scale: 0.95 }}
               >
-                <h4 className="text-xl font-semibold text-blue-300">
-                  1st Place National Hackathon
-                </h4>
-                <p className="text-gray-400">InnoTech Summit | 2021</p>
-              </motion.div> */}
+                View All Certifications
+              </motion.a>
             </div>
           </motion.div>
         </motion.div>
