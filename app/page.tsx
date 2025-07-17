@@ -759,7 +759,7 @@ export default function LandingPage() {
             </div>
             <motion.button
               type="submit"
-              className="w-full px-6 py-3 bg-blue-600 text-white font-bold text-base md:text-lg rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg"
+              className="w-full px-6 py-3 bg-blue-600 cursor-pointer text-white font-bold text-base md:text-lg rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg"
               whileHover={{
                 scale: 1.02,
                 boxShadow: "0 0 20px rgba(96, 165, 250, 0.6)",
